@@ -23,12 +23,15 @@
         <div class="clearfix"></div>
          <div class="col-4 float-left">
             <nav class="navbar navbar-light shadow p-3 mb-5 bg-white rounded">
-                <h4>Search for a City:</h4>
-                    <form class="form-inline">
-                        <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button id="select-city" type="submit" class="btn"><i class="fas fa-search"></i></button>    
-                    </form>
-                    <form id="searchhistory" class="mt-1"></form>
+                <h5>Search for a City:</h5>
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                    <div class="input-group-append">
+                        <button class="btn" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
             </nav>
         </div>
             <div class="col-8 float-right">
@@ -37,13 +40,23 @@
                     <!-- Current Weather -->
                     <div id="currentWeather-display"></div>
                 </div>
-                    <br>
-                    <h2>5-Day Forcast:</h2>
-                <div id="5day" class="row">
-                    <!-- 5-Day Forecast -->
+                
+                <!-- 5-Day Forecast -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
                 </div>
-           </div> 
-    </div>
+                <div class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                </div>
+            </div>
+    </div> 
+ 
 
 </body>
 </html>
