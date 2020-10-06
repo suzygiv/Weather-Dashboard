@@ -18,45 +18,51 @@
         <h1>Weather Dashboard</h1>
     </header>
     <br>
+
+    <!-- Search City -->
     <div class="container">
-        <!-- clears floated content within a container -->
         <div class="clearfix"></div>
-         <div class="col-4 float-left">
-            <nav class="navbar navbar-light shadow p-3 mb-5 bg-white rounded">
-                <h5>Search for a City:</h5>
-                <div class="input-group mb-3">
-                    <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
-                    <div class="input-group-append">
-                        <button class="btn" type="button" id="search-button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-            <div class="col-8 float-right">
-                <div class="card bg-light text-dark shadow p-3 mb-5 bg-white rounded" style="width: 710; height: 19rem;">
-                    <div id="current"></div>
-                    <!-- Current Weather -->
-                    <div id="currentWeather-display"></div>
-                </div>
-                
-                <!-- 5-Day Forecast -->
-                <div class="row">
-                    <div class="col-12">
-                        <h3>5-Day Forecast</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+            <div class="col-4 float-left">
+                <nav class="navbar navbar-light shadow p-3 mb-5 bg-white rounded">
+                    <form id="city-form">
+                        <label for="city-input">Search for a City:</label>
+                        <br>
+                        <input type="text" id="city-input">
+                            <button type="submit" id="find-city" class="btn btn-primary btn-sm">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <button id="clear-city-names" type="button" class="btn btn-primary btn-sm" title="Delete city list">X</button>
+                    </form>
+                </nav>
+
+            <div id="city-list"></div>
+
+            </div>
+
+        <div class="col-8 float-right">
+            <div class="card bg-light text-dark shadow p-3 mb-5 bg-white rounded" style="width: 710; height: 19rem;">
+                <div class="card-body">
+                    <h1 id="city-name"></h1>
+                        <p>Temperature: <span id="city-temp"></span> &deg;F</p>
+                        <p>Humidity: <span id="city-humid"></span>%</p>
+                        <p>Wind Speed: <span id="city-wind"></span> MPH</p>
+                        <p>UV Index: <span id="UV-index"></span></p>
                 </div>
             </div>
-    </div> 
- 
+
+        <div>
+          <h2>5-Day Forecast:</h2>
+        </div>
+
+        <div class="card-deck" id="five-day-deck"></div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src='script.js' type="text/javascript"></script>
 
 </body>
 </html>
