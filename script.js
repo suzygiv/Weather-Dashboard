@@ -114,17 +114,17 @@ function getAPIs(city) {
     }
 }
 
-function renderCities() {
+    function renderCities() {
 
-  $("#city-list").empty();
+        $("#city-list").empty();
 
-  cities.forEach(city => {
+        cities.forEach(city => {
 
-    let cityCard = $("<div>").attr("class", "card");
-    let cityCardBody = $("<div>").attr("class", "card-body city").text(city);
-    cityCard.append(cityCardBody);
-    $("#city-list").prepend(cityCard);
-  })
+        let cityCard = $("<div>").attr("class", "card");
+        let cityCardBody = $("<div>").attr("class", "card-body city").text(city);
+        cityCard.append(cityCardBody);
+        $("#city-list").prepend(cityCard);
+    })
 }
 
 init();
