@@ -89,7 +89,6 @@
         $("#city-temp").text(cityTemp);
         $("#city-humid").text(cityHumid);
         $("#city-wind").text(cityWind);
-        $("#UV-index").text(uvIndex);
     }
 
     // 5-Day Forecast //
