@@ -119,7 +119,7 @@
         $("#five-day-deck").append(cardEl);
     }
 }
-
+   // Render City List //
     function renderCities() {
 
         $("#city-list").empty();
