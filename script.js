@@ -1,8 +1,9 @@
 
-// Variables //
-let cities = [];
+   // Get City from API //
+    function getAPIs(city) {
 
-function getAPIs(city) {
+     // Variables //
+     let cities = [];
 
     // API Key //
     const APIKey = "7b3dea9f51f9521ad1e328c3862e4254";
@@ -13,39 +14,44 @@ function getAPIs(city) {
     $.ajax({
         url: fiveDayQueryURL,
         method: "GET"
-    }).then(function(response) {
+    })
+    
+        .then(function(response) {
         showFiveDayWeather(response);
     })
   
     $.ajax({
         url: mainQueryURL,
         method: "GET"
-    }).then(function(response) {
-      showCurrentWeather(response);
+    })
+    
+        .then(function(response) {
+        showCurrentWeather(response);
     })
   
-    if (cities.indexOf(city) === -1) {
-      cities.push(city);
+        if (cities.indexOf(city) === -1) {
+        cities.push(city);
     }
   
     saveCities();
     renderCities();
-  };
+
+    };
   
     // Search Cities //
     $("#find-city").on("click", function(event) {
         event.preventDefault();
 
-    let city = $("#city-input").val();
-    getAPIs(city);
+        let city = $("#city-input").val();
+        getAPIs(city);
     
     });
 
     $("#city-list").on("click", ".city", function(event) {
         event.preventDefault();
 
-    let city = $(this).text();
-    getAPIs(city);
+        let city = $(this).text();
+        getAPIs(city);
     
     });
 
