@@ -3,7 +3,7 @@
      // Variables //
      let cities = [];
    
-    // Get City from API //
+    // Get City Name from API //
     function getAPIs(city) {
 
     // API Key //
