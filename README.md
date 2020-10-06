@@ -1,6 +1,6 @@
 # Weather-Dashboard
 
-## Link to Work Day Scheduler
+## Link to Weather Dashbaord
 https://suzygiv.github.io/Work-Day-Scheduler/
 
 ## Description
