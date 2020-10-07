@@ -13,11 +13,8 @@ The user can utilize the Weather Dashboard app to search for a specific city's c
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboard.PNG)
 
-<<<<<<< HEAD
+
 ## Cities Cleared below Search Bar
-=======
-## Cities Cleared Below Search bar
->>>>>>> c6bce0e082d1aa9ae40b0ef742ca15c0dc9532f5
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboardClear.PNG)
 
