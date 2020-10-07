@@ -1,7 +1,7 @@
 # Weather-Dashboard
 
 ## Link to Weather Dashbaord
-
+https://suzygiv.github.io/Weather-Dashboard/
 
 ## Description
 The Weather Dashboard is a simple weather application that allows a user to search for a city and get the current weather and 5-day forecast for that city. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and a third-party API, OpenWeatherMap API, that allows access to weather data with specfic parameters to the URL - in this case, cities and 5-day forecast.
