@@ -1,44 +1,41 @@
 
    
-     // Variables //
-     let cities = [];
+    // Variables //
+    let cities = [];
    
-    // Get City Name from API //
+    // Start the API Function //
     function getAPIs(city) {
 
     // API Key //
     const APIKey = "7b3dea9f51f9521ad1e328c3862e4254";
+    
     let fiveDayQueryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city},us&units=imperial&appid=${APIKey}`;
-    let mainQueryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&appid=${APIKey}`;
-  
+    let mainQueryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&appid=${APIKey}`
+
+
     // API Calls //
     $.ajax({
         url: fiveDayQueryURL,
         method: "GET"
-    })
-    
-        .then(function(response) {
-        showFiveDayWeather(response);
+    }).then(function(response) {
+       showFiveDayWeather(response);
     })
   
     $.ajax({
         url: mainQueryURL,
         method: "GET"
+    }).then(function(response) {
+      showCurrentWeather(response);
     })
-    
-        .then(function(response) {
-        showCurrentWeather(response);
-    })
-  
         if (cities.indexOf(city) === -1) {
         cities.push(city);
     }
-  
+   
     saveCities();
     renderCities();
 
     };
-  
+
     // Search Cities //
     $("#find-city").on("click", function(event) {
         event.preventDefault();
@@ -56,13 +53,14 @@
     
     });
 
+    // Clears Cities 
     $("#clear-city-names").on("click", function() {
         cities = [];
         saveCities();
         renderCities();
     })
 
-    // Previously Searched Cities Saved to Local Storage //
+  
     function init() {
         let storedCities = JSON.parse(localStorage.getItem("cities"));
 
@@ -71,11 +69,12 @@
         }
     }
 
+    // Previously Searched Cities Saved to Local Storage //
     function saveCities() {
         localStorage.setItem("cities", JSON.stringify(cities));
     }
 
-    // Current Weather //
+    // Current Weather Function //
     function showCurrentWeather(response) {
  
         let cityName = response.name;
@@ -91,7 +90,7 @@
         $("#city-wind").text(cityWind);
     }
 
-    // 5-Day Forecast //
+    // 5-Day Forecast Function //
     function showFiveDayWeather(response) {
 
     $("#five-day-deck").empty();

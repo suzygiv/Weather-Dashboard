@@ -13,12 +13,12 @@ The user can utilize the Weather Dashboard app to search for a specific city's c
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboard.PNG)
 
-## Cities Cleared under Search bar
+## Cities Cleared below Search Bar
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboardClear.PNG)
 
 ## Functionality
-The app utilizes HTML, CSS, jQuery, Moment.js and OpenWeatherMap API. jQuery was used to select and mainpulate the DOM. Local storage was used to save event data. Moment.js was used to create the time responsiveness in the page. OpenWeatherMap API was used to access weather data in cities. In addition to the above, the dynamic CSS code is powered by Bootstrap, Font Awesome, and Google fonts.
+The app utilizes HTML, CSS, jQuery, Moment.js and OpenWeatherMap API. jQuery was used to select and mainpulate the DOM. Local storage was used to save event data. Moment.js was used to create the time responsiveness in the page. OpenWeatherMap API was used to access weather data in searched cities. In addition to the above, the dynamic CSS code is powered by Bootstrap, Font Awesome, and Google fonts.
 
 
 
