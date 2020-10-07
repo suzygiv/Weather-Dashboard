@@ -9,11 +9,11 @@ The Weather Dashboard is a simple weather application that allows a user to sear
 ## Usage
 The user can utilize the Weather Dashboard app to search for a specific city's current weather and 5-day forecast. The dashboard allows the user to prepare for an event, travel, or every day errand by providing them with an outlook on the weather and future weather. When the user inputs a city, the city will be saved into local storage and appear underneath the search bar if they wish to go back to their previously searched cities. If the user would like to clear their previously searched cities, they can simply click the 'trash can' button - this will clear their search from local storage. 
 
-## Search for Cities with Previously Searched Cities 
+## Search for Cities with Previously Searched Cities Below
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboard.PNG)
 
-## Clear Cities from Local Storage
+## Cities Cleared under Search bar
 
 ![Main Page](https://github.com/suzygiv/Weather-Dashboard/blob/master/Assets/WeatherDashboardClear.PNG)
 
