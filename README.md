@@ -22,4 +22,5 @@ The user can utilize the Weather Dashboard app to search for a specific city's c
 The app utilizes HTML, CSS, jQuery, Moment.js and OpenWeatherMap API. jQuery was used to select and mainpulate the DOM. Local storage was used to save event data. Moment.js was used to create the time responsiveness in the page. OpenWeatherMap API was used to access weather data in searched cities. In addition to the above, the dynamic CSS code is powered by Bootstrap, Font Awesome, and Google fonts.
 
 
-
+## License
+[MIT License](http://opensource.org/licenses/mit-license.php)
